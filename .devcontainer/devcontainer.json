@@ -2,20 +2,26 @@
 {
   "name": "PHP",
   "image": "mcr.microsoft.com/vscode/devcontainers/php:8.1",
+  "mounts": [
+    {
+      "source": "/home/brunoferreira/projects/wordpress-6.1.1",
+      "target": "/home/vscode/_wordpress",
+      "type": "bind"
+    }
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
         "junstyle.php-cs-fixer",
         "neilbrayfield.php-docblocker",
         "bmewburn.vscode-intelephense-client",
-        "MehediDracula.php-namespace-resolver",
-        "eamodio.gitlens",
-        "vivaxy.vscode-conventional-commits",
         "ms-vscode-remote.remote-wsl",
-        "WakaTime.vscode-wakatime",
         "yzhang.markdown-all-in-one"
       ],
       "settings": {
+        "intelephense.environment.phpVersion": "8.1",
+        // "intelephense.environment.phpVersion": "7.4",
+        "php-cs-fixer.config": ".php-cs-fixer.php",
         "files.eol": "\n",
         "files.encoding": "utf8",
         "php.suggest.basic": false,
@@ -32,9 +38,6 @@
         "php-cs-fixer.formatHtml": true,
         "php-cs-fixer.onsave": true,
         "php.validate.enable": false,
-        "intelephense.environment.phpVersion": "8.1",
-        // "intelephense.environment.phpVersion": "7.4",
-        "php-cs-fixer.config": ".php-cs-fixer-wp.php",
         "php-docblocker.useShortNames": true,
         "php-docblocker.qualifyClassNames": true,
         "php-docblocker.paramDescription": true,
