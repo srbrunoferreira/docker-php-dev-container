@@ -1,12 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/php
 {
   "name": "PHP",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/vscode/devcontainers/php:8.1",
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  // "features": {},
-  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,7 +12,7 @@
         "eamodio.gitlens",
         "vivaxy.vscode-conventional-commits",
         "ms-vscode-remote.remote-wsl",
-        // "WakaTime.vscode-wakatime",
+        "WakaTime.vscode-wakatime",
         "yzhang.markdown-all-in-one"
       ],
       "settings": {
@@ -34,14 +29,12 @@
             120
           ]
         },
-        "php-cs-fixer.rules": "@PSR12,@PSR1,@PSR2",
         "php-cs-fixer.formatHtml": true,
         "php-cs-fixer.onsave": true,
         "php.validate.enable": false,
-        // "php.executablePath": "/usr/local/bin/php",
-        "intelephense.environment.phpVersion": "8.1.14",
-        // "intelephense.environment.phpVersion": "7.4.33"
-        "php-cs-fixer.config": ".php-cs-fixer.php",
+        "intelephense.environment.phpVersion": "8.1",
+        // "intelephense.environment.phpVersion": "7.4",
+        "php-cs-fixer.config": ".php-cs-fixer-wp.php",
         "php-docblocker.useShortNames": true,
         "php-docblocker.qualifyClassNames": true,
         "php-docblocker.paramDescription": true,

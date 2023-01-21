@@ -1,8 +1,11 @@
 <?php
 
 /**
- * php-cs-fixer config that follows the PSR-12.
- * Source: https://gist.github.com/srbrunoferreira/5b0d96955c3913f6b1cd805c2a14079d
+ * To strictly follow the PSRs.
+ *
+ * @see source https://gist.github.com/srbrunoferreira/5b0d96955c3913f6b1cd805c2a14079d
+ * @see rules https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/master/doc/rules/index.rst
+ * @see php-cs-fixer rule sets https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/master/doc/ruleSets/index.rst
  */
 
 return (new PhpCsFixer\Config())
@@ -52,7 +55,7 @@ return (new PhpCsFixer\Config())
         'no_whitespace_before_comma_in_array' => true,
         'no_whitespace_in_blank_line' => true,
         'object_operator_without_whitespace' => true,
-        'phpdoc_align' => true,
+        'phpdoc_align' => ['align' => 'vertical'],
         'phpdoc_no_empty_return' => true,
         'phpdoc_no_useless_inheritdoc' => true,
         'phpdoc_scalar' => true,
@@ -71,6 +74,13 @@ return (new PhpCsFixer\Config())
         'whitespace_after_comma_in_array' => true,
         'space_after_semicolon' => true,
         'single_blank_line_at_eof' => true,
+
+        'yoda_style' => [
+            'always_move_variable' => false,
+            'equal' => false,
+            'identical' => false,
+            'always_move_variable' => false,
+        ],
 
         // Risk
         'strict_comparison' => true,
