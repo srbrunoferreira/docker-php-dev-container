@@ -14,9 +14,7 @@
       "extensions": [
         "junstyle.php-cs-fixer",
         "neilbrayfield.php-docblocker",
-        "bmewburn.vscode-intelephense-client",
-        "ms-vscode-remote.remote-wsl",
-        "yzhang.markdown-all-in-one"
+        "bmewburn.vscode-intelephense-client"
       ],
       "settings": {
         "intelephense.environment.phpVersion": "8.1",
@@ -37,6 +35,7 @@
         },
         "php-cs-fixer.formatHtml": true,
         "php-cs-fixer.onsave": true,
+        "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
         "php.validate.enable": false,
         "php-docblocker.useShortNames": true,
         "php-docblocker.qualifyClassNames": true,

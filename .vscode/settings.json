@@ -1,5 +1,6 @@
 {
+  "intelephense.environment.documentRoot": "src",
   "intelephense.environment.includePaths": [
-    "/home/vscode/_wordpess"
+    "/home/vscode/_wordpress",
   ]
 }
