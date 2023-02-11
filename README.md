@@ -1,10 +1,15 @@
 # docker-php-dev-container
 
-This repository provides a development environment for WHMCS or WordPress
+This repository provides a simple and fast env setup for WHMCS or WordPress
+
+Use this to develop your WHMCS module or gateway.
+
+Use this to code your WordPress plugin.
 
 # Features
-- PHP linting and formatting with Intelephense(https://github.com/bmewburn/vscode-intelephense) and php-cs-fixer
-- JavaScript linting and formatting with ESlint and Standard style
+* PHP linting and formatting with Intelephense and php-cs-fixer
+* JavaScript linting and formatting with ESlint and Standard style
+* WordPress autocompletion with Intelephense
 
 # Setups
 
