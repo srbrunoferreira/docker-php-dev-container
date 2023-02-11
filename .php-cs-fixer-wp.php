@@ -81,6 +81,13 @@ return (new PhpCsFixer\Config())
             'identical' => true,
             'always_move_variable' => true,
         ),
+
+        'modernize_types_casting' => true,
+        'final_class' => true,
+        'final_internal_class' => true,
+        'final_public_method_for_abstract_class' => true,
+        'void_return' => true,
+        'logical_operators' => true
     ))
     ->setIndent('    ')
     ->setLineEnding("\n")

@@ -81,11 +81,23 @@ return (new PhpCsFixer\Config())
             'identical' => false,
             'always_move_variable' => false,
         ],
+        'fully_qualified_strict_types' => true,
+        'global_namespace_import' => [
+            'import_classes' => true,
+            'import_constants' => true,
+            'import_functions' => true,
+        ],
 
         // Risk
         'strict_comparison' => true,
         'declare_strict_types' => false,
-        'strict_param' => true
+        'strict_param' => true,
+        'modernize_types_casting' => true,
+        'final_class' => true,
+        'final_internal_class' => true,
+        'final_public_method_for_abstract_class' => true,
+        'void_return' => true,
+        'logical_operators' => true,
     ])
     ->setIndent('    ')
     ->setLineEnding("\n")
