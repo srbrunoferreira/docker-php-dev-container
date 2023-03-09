@@ -66,6 +66,7 @@ return (new PhpCsFixer\Config())
         'no_spaces_inside_parenthesis' => false,
         'not_operator_with_space' => true,
         // 'not_operator_with_successor_space' => true,
+        'native_constant_invocation' => array('scope' => 'namespaced'),
         'phpdoc_tag_casing' => true,
         'phpdoc_types_order' => array(
             'null_adjustment' => 'always_last',
