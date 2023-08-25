@@ -58,7 +58,6 @@
         "html.format.wrapAttributes": "force-expand-multiline",
         "html.format.wrapAttributesIndentSize": 4,
         "html.format.wrapLineLength": 120,
-        "intelephense.completion.maxItems": 10,
         "intelephense.environment.documentRoot": "src",
         "intelephense.environment.phpVersion": "8.1",
         "intelephense.files.associations": [
